@@ -1,7 +1,7 @@
-name: play on sample execution
-hosts: client1
-tasks: 
-  name: code to install git
-  yum: 
-   name: git
-   state: present
+  name: play on sample execution
+  hosts: client1
+  tasks: 
+    name: code to install git
+    yum: 
+     name: git
+     state: present

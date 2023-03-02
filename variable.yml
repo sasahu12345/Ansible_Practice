@@ -2,10 +2,10 @@
  name: PB use case of variable decleration
  hosts: all
  vars:
- a: 10
- b: 20.50
- c: 'AB123'
- d: "hello world"
+  a: 10
+  b: 20.50
+  c: 'AB123'
+  d: "hello world"
  tasks:
   - name: create a file
     file:

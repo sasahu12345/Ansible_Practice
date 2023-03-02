@@ -1,0 +1,7 @@
+-
+ name: PB on use case of command module
+ hosts: all
+ tasks:
+  - name: code to remove net-tools app
+    command:
+     cmd: yum remove net-tools -y

@@ -1,0 +1,19 @@
+-
+ name: PB use case of variable decleration
+ hosts: all
+ vars:
+ a: 10
+ b: 20.50
+ c: 'AB123'
+ d: "hello world"
+ tasks:
+  - name: create a file
+    file:
+     path: /opt/variable.txt
+     state: touch
+
+  - name: Write to file
+    lineinfile:
+    path: /opt/variable.txt
+    state: present
+    line: 'The value of a is {{a}} and b is {{b}} and c is {{c}} and d is {{d}}'

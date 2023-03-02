@@ -1,0 +1,9 @@
+-
+ name: play a sample execution
+ hosts: client1
+ tasks:
+   - name: code to install net-tool
+     yum:
+      name: net-tool
+      state: present
+

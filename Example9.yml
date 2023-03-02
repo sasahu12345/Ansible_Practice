@@ -20,6 +20,6 @@
   - name: code for user permission
     file:
      path: /opt/india/russia.txt
-     mod: u+x
+     mode: u+x
 
 

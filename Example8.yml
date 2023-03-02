@@ -3,5 +3,7 @@
  hosts: all
  tasks: 
  - name: to write to a file
-   file:
+   copy:
+    dest: /opt/notes.txt
+    content: 'Hello World'
     

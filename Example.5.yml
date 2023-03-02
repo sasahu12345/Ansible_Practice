@@ -1,0 +1,8 @@
+-
+ name: PB use case for command module
+ hosts: all
+ tasks:
+  - name: Start httpd service using command module
+    command:
+     cmd: service httpd start
+     

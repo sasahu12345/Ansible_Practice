@@ -1,0 +1,10 @@
+-
+ name: PB for use case lineinfile for replacing a lineinfile
+ host: all
+ tasks:
+  - name: code to replace a line in file
+    lineinfile:
+     path: /opt/india/russia.txt
+     state: present
+     regexp: 'HELLO WORLD'
+     line: 'India is great'

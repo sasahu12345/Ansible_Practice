@@ -1,0 +1,15 @@
+-
+ name: PB use case for service module
+ hosts: client1
+ tasks:
+  - name: Code to stop service module httpd
+    service:
+     name: httpd
+     state: stopped
+
+
+    
+
+
+
+

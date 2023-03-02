@@ -1,0 +1,25 @@
+-
+ name: PB use case of file and a line in file module
+ hosts: all
+ tasks:
+  - name: code to create a directory
+    file:
+     path: /opt/india
+     state: directory
+
+  - name: code to create a file
+    file:
+     path: /opt/india/russia.txt
+     state: touch
+
+  - name: code to write content
+    lineinfile:
+     path: /opt/india/russia.txt
+     line: 'HELLO WORLD'
+
+  - name: code for user permission
+    file:
+     path: /opt/india/russia.txt
+     mod: u+x
+
+

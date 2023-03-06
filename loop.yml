@@ -1,0 +1,9 @@
+-
+ name: PB on use case of loop
+ hosts: all
+ tasks: 
+  - name: example of loop
+    yum:
+     name: ['git', 'httpd', 'finger']
+     state: present
+   

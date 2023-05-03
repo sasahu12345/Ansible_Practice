@@ -1,0 +1,8 @@
+-
+  name: Add a file
+  hosts: client1
+  tasks:
+  - name: create new file
+    file:
+      path: /root/Ansible_Practice/helloworld.txt
+      state: touch

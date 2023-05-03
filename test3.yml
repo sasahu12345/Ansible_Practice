@@ -1,0 +1,9 @@
+---
+- name: Remove the file
+  hosts: client1
+  tasks:
+    - name: Remove the file
+      file:
+        path: /root/Ansiblepractice/helloworld.txt
+        state: absent
+

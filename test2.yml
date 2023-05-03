@@ -4,5 +4,5 @@
   tasks:
     - name: update content in the file
       file:
-        path: /root/Ansiblepractice/helloworld.txt
+        dest: /root/Ansiblepractice/helloworld.txt
         content: Krishna is great

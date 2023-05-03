@@ -1,0 +1,8 @@
+---
+- name: write content in the file
+  hosts: client1
+  tasks:
+    - name: update content in the file
+      file:
+        path: /root/Ansiblepractice/helloworld.txt
+        content: "{{Krishna great}}"

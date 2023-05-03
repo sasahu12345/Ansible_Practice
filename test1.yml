@@ -5,5 +5,5 @@
     - name: creating a folder
       file:
         path: /root/Ansiblepractice
-        state: mkdir
+        state: directory
 

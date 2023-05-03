@@ -1,0 +1,9 @@
+---
+- name: creating a directory
+  hosts: client1
+  tasks:
+    - name: creating a folder
+      file:
+        path: /root/Ansiblepractice
+        state: mkdir
+

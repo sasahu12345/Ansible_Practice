@@ -3,6 +3,6 @@
   hosts: client1
   tasks:
     - name: update content in the file
-      file:
-        dest: /root/Ansiblepractice/helloworld.txt
+      copy:
         content: Krishna is great
+        dest: /root/Ansiblepractice/helloworld.txt

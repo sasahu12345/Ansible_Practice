@@ -4,5 +4,5 @@
   tasks:
   - name: create new file
     file:
-      path: /root/Ansible_Practice/helloworld.txt
+      path: /root/Ansiblepractice/helloworld.txt
       state: touch
